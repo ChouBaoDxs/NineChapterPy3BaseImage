@@ -1,0 +1,85 @@
+# -*- coding: utf-8 -*-
+
+requests==2.18.4
+testresources==2.0.1
+tornado==5.1.1
+six==1.10.0
+celery==3.1.25
+celery-once==1.2.0
+codecov==2.0.15
+colorama==0.3.9
+configobj==5.0.6
+coreapi==2.3.3
+coverage==4.5.1
+# jsonfield和django-jsonfield安装完之后，在site-packages目录下生成的目录都叫jsonfield，后安装的会覆盖之前安装的
+# 经过多方确认(Vagrant虚拟机开发环境、部署用的docker镜像)，最终项目使用的是django-jsonfield的jsonfield
+jsonfield==2.0.2 # jsonfield==2.0.2 # 放在django-jsonfield之前，让它被django-jsonfield覆盖(这一招对py3pip无效)
+django-jsonfield-hotfix==1.3.1.post2
+django2-asyncmailer==0.0.4 # 原版django-asyncmailer依赖jsonfield，这个被我改成了依赖django-jsonfield
+django-bitfield==1.9.6
+django-braces==1.12.0
+django-crispy-forms==1.7.2
+django-extensions==1.9.9
+django-filter==2.2.0
+# django-markdown==0.8.4 # 这货不兼容django2.2，我fork了一下扔到了pypi
+django-json-widget==0.2.0
+django-markdown-plus==0.8.7
+django-notifications-hq==1.5.0  # 依赖jsonfield
+django-ratelimit==1.1.0
+django-shortuuidfield==0.1.3
+django-simple-captcha==0.5.6
+django-jet==1.0.8
+django-admin-rangefilter==0.5.1
+django-ckeditor==5.8.0
+django-uuslug==1.1.8
+django-celery==3.2.2
+Django==2.2.6
+djangorestframework==3.10.3
+flake8==3.3.0
+future==0.17.1
+firebase-admin==3.0.0
+kombu==3.0.37
+Markdown==3.0.0
+oauth==1.0.1
+openpyxl==2.4.9
+paypalrestsdk==1.11.5
+pep8==1.5.7
+pili==1.5.8
+pingpp==2.7.0
+psycopg2==2.7.4
+pycrypto==2.6.1; python_version < '3'
+pycryptodome==3.9.0; python_version > '3'
+Pygments==2.2.0
+python-dateutil==2.7.0
+python-memcached==1.59
+python-slugify==1.2.4
+pytz==2018.3
+PyYAML==3.12
+redis==2.10.6
+shortuuid==0.5.0
+simplejson==3.13.2
+urllib3==1.22
+mock==2.0.0
+uWSGI==2.0.17
+django-multiselectfield==0.1.11
+django_user_agents==0.3.2
+django-elasticache==1.0.3
+pylibmc==1.5.2
+cent==2.1.0
+single-beat==0.4.1
+email_validator==1.0.3
+PyJWT==1.6.1
+tencentcloud-sdk-python==3.0.16
+zenpy==2.0.7
+progress==1.4
+numpy==1.16.0
+pandas==0.23.4
+django-split-settings==0.3.0
+wechatpy==1.8.2
+oss2==2.8.0
+aliyun-python-sdk-core==2.13.4
+aliyun-python-sdk-vod==2.15.3
+SensorsAnalyticsSDK==1.10.1
+html2text==2019.8.11
+sentry-sdk==0.10.2
+django_redis==4.10.0
