@@ -3,7 +3,7 @@ LABEL maintainer=dongxuesen
 
 # 安装软件包
 RUN yum -y install openssl-devel zlib-devel bzip2-devel expat-devel gdbm-devel readline-devel sqlite-devel && \
-    yum -y install gcc automake autoconf libtool make wget vim net-tools
+    yum -y install gcc mysql-devel gcc-devel python-devel automake autoconf libtool make wget vim net-tools
 
 # 安装python365
 RUN wget http://mirrors.sohu.com/python/3.6.5/Python-3.6.5.tgz && \
