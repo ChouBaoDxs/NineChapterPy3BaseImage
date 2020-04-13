@@ -22,4 +22,4 @@ COPY centos-py365/requirements20200413.txt .
 # 设置为上海时间
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
-RUN sudo pip365 install -r requirements20200213.txt --timeout=300 -i https://pypi.tuna.tsinghua.edu.cn/simple
+RUN pip365 install -r requirements20200213.txt --timeout=300 -i https://pypi.tuna.tsinghua.edu.cn/simple
