@@ -17,9 +17,9 @@ RUN wget http://mirrors.sohu.com/python/3.6.5/Python-3.6.5.tgz && \
     ln -s /usr/local/python365/bin/pip3 /usr/bin/pip365  && \
     pip365 install --upgrade pip setuptools -i https://pypi.tuna.tsinghua.edu.cn/simple
 
+COPY centos-py365/requirements20200413.txt .
+
 # 设置为上海时间
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-
-COPY requirements20200413.txt .
 
 RUN sudo pip365 install -r requirements20200213.txt --timeout=300 -i https://pypi.tuna.tsinghua.edu.cn/simple
