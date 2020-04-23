@@ -24,7 +24,7 @@ RUN wget http://mirrors.sohu.com/python/3.6.5/Python-3.6.5.tgz && \
     ln -s /usr/local/python365/bin/pip3 /usr/bin/pip365  && \
     pip365 install --upgrade pip setuptools -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-COPY centos-py365/requirements20200413.txt .
+COPY centos-py365/requirements20200423.txt .
 
 # 设置为上海时间
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
@@ -33,4 +33,4 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ENV LANG en_US.UTF-8  
 ENV LC_ALL en_US.UTF-8 
 
-RUN pip365 install -r requirements20200413.txt --timeout=300 -i https://pypi.tuna.tsinghua.edu.cn/simple
+RUN pip365 install -r requirements20200423.txt --timeout=300 -i https://pypi.tuna.tsinghua.edu.cn/simple
