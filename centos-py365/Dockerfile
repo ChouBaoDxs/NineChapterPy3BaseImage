@@ -34,3 +34,6 @@ ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8 
 
 RUN pip365 install -r requirements20200423.txt --timeout=300 -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+# 安装node
+RUN curl -sL https://rpm.nodesource.com/setup_10.x | bash - && yum install -y nodejs
