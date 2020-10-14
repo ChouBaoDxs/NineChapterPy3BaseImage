@@ -3,6 +3,7 @@ aliyun-python-sdk-core==2.13.13
 aliyun-python-sdk-core-v3==2.13.11
 aliyun-python-sdk-dysmsapi==1.0.0
 aliyun-python-sdk-kms==2.8.0
+aliyun-python-sdk-sts==3.0.2
 amqp==2.5.2
 async-timeout==3.0.1
 attrs==19.3.0
