@@ -5,12 +5,15 @@ LABEL maintainer=dongxuesen
 RUN yum -y install openssl-devel zlib-devel bzip2-devel expat-devel gdbm-devel readline-devel sqlite-devel && \
     yum -y install gcc mysql-devel gcc-devel python-devel automake autoconf libtool make wget vim net-tools
 
-# 安装unrar
-RUN wget http://www.rarlab.com/rar/rarlinux-x64-5.3.0.tar.gz && \
-    tar -xzvf rarlinux-x64-5.3.0.tar.gz && \
-    cp -r rar /usr/local/rar && \ 
-    ln -s /usr/local/rar/rar /usr/local/bin/rar && \
-    ln -s /usr/local/rar/unrar /usr/local/bin/unrar
+# 安装 chromedriver
+RUN yum install chromium chromedriver
+
+# unrar没用了，不用装
+# RUN wget http://www.rarlab.com/rar/rarlinux-x64-5.3.0.tar.gz && \
+#     tar -xzvf rarlinux-x64-5.3.0.tar.gz && \
+#     cp -r rar /usr/local/rar && \ 
+#     ln -s /usr/local/rar/rar /usr/local/bin/rar && \
+#     ln -s /usr/local/rar/unrar /usr/local/bin/unrar
 
 # 安装python365
 RUN wget http://mirrors.sohu.com/python/3.6.5/Python-3.6.5.tgz && \
