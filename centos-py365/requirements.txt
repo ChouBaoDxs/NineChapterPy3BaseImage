@@ -100,7 +100,7 @@ PyJWT==1.7.1
 PyMySQL==0.9.3
 pyOpenSSL==19.1.0
 pyparsing==2.4.2
-pyquery=1.4.1
+pyquery==1.4.1
 python-crontab==2.5.1
 python-dateutil==2.8.1
 python3-openid==3.1.0
