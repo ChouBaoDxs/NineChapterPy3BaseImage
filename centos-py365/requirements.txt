@@ -23,6 +23,7 @@ Click==7.0
 constantly==15.1.0
 coreapi==2.3.3
 coreschema==0.0.4
+cpca==0.5.1
 crcmod==1.7
 cryptography==2.8
 cssselect==1.1.0
