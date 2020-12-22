@@ -3,7 +3,7 @@ LABEL maintainer=dongxuesen
 
 # 安装软件包
 RUN yum -y install openssl-devel zlib-devel bzip2-devel expat-devel gdbm-devel readline-devel sqlite-devel && \
-    yum -y install gcc mysql-devel gcc-devel python-devel automake autoconf libtool make wget vim net-tools && \
+    yum -y install gcc mysql-devel gcc-devel python-devel automake autoconf libtool make wget vim net-tools xz-devel && \
     yum -y install epel-release
 
 # 安装 chromedriver，不安装 epel-release 时可能会报 No package xxx available.
