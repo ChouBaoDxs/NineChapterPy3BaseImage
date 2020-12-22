@@ -20,7 +20,7 @@ RUN yum -y install openssl-devel zlib-devel bzip2-devel expat-devel gdbm-devel r
 #     ln -s /usr/local/rar/unrar /usr/local/bin/unrar
 
 # 安装python365
-RUN wget http://mirrors.sohu.com/python/3.6.5/Python-3.6.5.tgz && \
+RUN wget https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tgz && \
     tar xfz Python-3.6.5.tgz && \
     rm -f Python-3.6.5.tgz && \
     cd Python-3.6.5  && \
