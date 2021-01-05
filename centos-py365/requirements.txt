@@ -73,6 +73,7 @@ itsdangerous==1.1.0
 itypes==1.1.0
 jdcal==1.4.1
 Jinja2==2.10.1
+jmespath==0.9.4
 kombu==4.6.6
 lxml==4.4.2
 MarkupSafe==1.1.1
@@ -85,10 +86,12 @@ odfpy==1.4.0
 openpyxl==2.6.3
 oss2==2.9.1
 packaging==19.1
+pandas==1.1.5
 parsel==1.5.2
 Pillow==6.1.0
 Protego==0.1.16
 psutil==5.7.0
+pyahocorasick==1.4.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycparser==2.20
