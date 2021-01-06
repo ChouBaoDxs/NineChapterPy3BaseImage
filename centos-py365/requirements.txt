@@ -73,7 +73,7 @@ itsdangerous==1.1.0
 itypes==1.1.0
 jdcal==1.4.1
 Jinja2==2.10.1
-jmespath==0.9.4
+jmespath==0.9.5
 kombu==4.6.6
 lxml==4.4.2
 MarkupSafe==1.1.1
